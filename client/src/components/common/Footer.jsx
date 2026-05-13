@@ -23,6 +23,10 @@ export default function Footer() {
           </div>
     
         </div>
+        <div className="border-t border-gray-200 dark:border-gray-800 pt-4 flex items-center justify-between">
+          <p className="text-xs text-gray-400">© {(()=> new Date().getFullYear())()} ShopCart.</p>
+          
+        </div>
       </div>
     </footer>
   );
