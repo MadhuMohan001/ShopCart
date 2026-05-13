@@ -1,0 +1,16 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "description": "MERN E-Commerce Portfolio Project",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "seed": "node --experimental-vm-modules server/utils/seed.js",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
